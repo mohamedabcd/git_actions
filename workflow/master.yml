@@ -1,0 +1,12 @@
+name: Test workflow
+on:
+  - push
+job :
+  Myfirstjob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first step
+        run: echo "Salut"
+      - uses: actions/checkout@v2
+      - name: Excute main
+        run: ls -la 
